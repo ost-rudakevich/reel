@@ -1,0 +1,7 @@
+.edit {
+  @apply h-full flex flex-col gap-y-10;
+
+  .title {
+    @apply text-2xl;
+  }
+}

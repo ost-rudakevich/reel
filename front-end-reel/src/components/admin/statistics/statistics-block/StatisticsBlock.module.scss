@@ -1,0 +1,21 @@
+.block {
+  @apply flex flex-col gap-y-3 w-64 h-28 bg-gray-800 p-4 rounded-lg;
+
+  .title {
+    @apply flex items-center justify-between pb-2 text-slate-200;
+
+    name {
+      @apply font-medium;
+    }
+
+    .icon {
+      @apply size-[22px];
+    }
+  }
+
+  > h2 {
+    @apply text-2xl;
+  }
+}
+
+@import 'MediaStatisticsBlock.module.scss';

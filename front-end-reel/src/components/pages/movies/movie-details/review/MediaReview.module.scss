@@ -1,0 +1,50 @@
+@media (max-width: 480px) {
+  .reviews {
+    > button {
+      @apply w-full px-2;
+    }
+
+    .wrapper {
+      > .review {
+        @apply min-w-[200px] h-[200px];
+
+        > .text {
+          @apply h-[80px];
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+  .reviews {
+    @apply flex flex-col items-center justify-center;
+
+    > button {
+      @apply w-[75%];
+    }
+
+    .wrapper {
+      @apply flex flex-col items-center justify-center;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .reviews {
+    > button {
+      @apply w-[55%];
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .reviews {
+    > button {
+      @apply w-[45%];
+    }
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+}

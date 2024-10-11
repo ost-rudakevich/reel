@@ -1,0 +1,96 @@
+@media (max-width: 480px) {
+  .search-list {
+    @apply w-[300px];
+    .title {
+      > span {
+        @apply text-sm pl-1;
+      }
+    }
+
+    .search-result {
+      > .item {
+        @apply h-32 gap-x-3 py-3 pl-2;
+
+        .info {
+          @apply gap-y-1;
+
+          .name {
+            @apply text-sm;
+          }
+
+          .genres {
+            @apply gap-x-2;
+
+            > span {
+              @apply text-xs;
+            }
+          }
+
+          .year {
+            @apply text-xs;
+          }
+        }
+
+        > img {
+          @apply w-16;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+  .search-list {
+    .title {
+      > span {
+        @apply text-base pl-1;
+      }
+    }
+
+    .search-result {
+      > .item {
+        @apply h-32 gap-x-3 py-3 pl-2;
+
+        .info {
+          @apply gap-y-1;
+
+          .name {
+            @apply text-sm;
+          }
+
+          .genres {
+            @apply gap-x-2;
+
+            > span {
+              @apply text-xs;
+            }
+          }
+
+          .year {
+            @apply text-xs;
+          }
+        }
+
+        > img {
+          @apply w-20;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .search-list {
+    .search-result {
+      > .item {
+        @apply h-36 gap-x-7 py-3 pl-2;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+}

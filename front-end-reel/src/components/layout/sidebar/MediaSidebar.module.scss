@@ -1,0 +1,80 @@
+@media (max-width: 480px) {
+  .sidebar {
+    @apply w-[40%] pl-1 pr-1 pt-5 pb-3 gap-x-3 gap-y-5;
+
+    .menu {
+      .title {
+        @apply text-sm;
+      }
+
+      .panel {
+        @apply space-y-2 py-2;
+
+        > .item {
+          @apply gap-x-2 px-1 py-2 text-sm;
+
+          > .icon {
+            @apply text-lg;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+  .sidebar {
+    @apply w-[30%] pl-2 pr-2 pt-9 pb-6 gap-x-4 gap-y-5;
+
+    .menu {
+      .title {
+        @apply text-base;
+      }
+
+      .panel {
+        @apply space-y-2 py-2;
+
+        > .item {
+          @apply gap-x-2 px-1 py-2 text-sm;
+
+          > .icon {
+            @apply text-lg;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .sidebar {
+    @apply w-[30%] pl-6 pr-5 pt-9 pb-6 gap-x-4 gap-y-5;
+
+    .menu {
+      .title {
+        @apply text-base;
+      }
+
+      .panel {
+        @apply space-y-1.5 py-3;
+
+        > .item {
+          @apply gap-x-3 px-3 py-2 text-base;
+
+          > .icon {
+            @apply text-xl;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .sidebar {
+    @apply w-[25%] pl-10 pr-5 pt-9 pb-6 gap-x-4 gap-y-5;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+}

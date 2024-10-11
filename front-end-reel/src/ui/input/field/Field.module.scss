@@ -1,0 +1,39 @@
+.field {
+  @apply w-full flex flex-col h-auto;
+
+  .container {
+    @apply w-full flex items-center gap-x-5 rounded-lg bg-white
+    px-3 py-2 shadow-md;
+
+    .input {
+      @apply w-full h-full outline-none px-2  bg-white
+      text-lg text-black;
+
+      &::placeholder {
+        @apply text-gray-400;
+      }
+    }
+
+    .icon-container {
+      @apply bg-primary p-2 rounded-lg;
+
+      .icon {
+        @apply w-5 h-5 text-white;
+      }
+
+      &:hover {
+        @apply cursor-pointer;
+      }
+    }
+
+    .input-error {
+      @apply border-b-primary border-b-2;
+    }
+  }
+}
+
+.error {
+  @apply text-primary px-2 ml-2 text-base mt-1 z-10;
+}
+
+@import 'MediaField.module.scss';

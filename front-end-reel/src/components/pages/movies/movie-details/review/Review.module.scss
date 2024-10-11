@@ -1,0 +1,52 @@
+.leave_form {
+  .heading {
+    @apply text-white mb-4;
+  }
+
+  .textarea {
+    @apply rounded-md text-white text-xl border border-gray-400 outline-none bg-gray-800 
+    p-3 block mt-4 resize-none w-full min-h-[110px];
+  }
+
+  .errors {
+    @apply text-red-500 text-sm list-disc pl-4 mt-3;
+  }
+}
+
+.reviews {
+  @apply w-full flex flex-col gap-y-10 px-7 pb-20;
+
+  > button {
+    @apply w-[35%];
+  }
+
+  .wrapper {
+    @apply w-full flex flex-wrap gap-7;
+
+    > .review {
+      @apply bg-gray-800 w-[220px] h-[220px] rounded-lg shadow-md p-6 pr-2;
+
+      > .header {
+        @apply flex justify-between;
+
+        > button {
+          @apply mt-[11px];
+        }
+
+        > .user {
+          @apply flex items-center mb-2;
+
+          > .avatar {
+            @apply mr-3 block rounded-full;
+          }
+        }
+      }
+
+      > .text {
+        @apply h-[100px] text-sm mt-2 pr-2 overflow-x-auto;
+      }
+    }
+  }
+}
+
+@import 'MediaReview.module.scss';

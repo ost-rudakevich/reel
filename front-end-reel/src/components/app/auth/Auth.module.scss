@@ -1,0 +1,9 @@
+.auth-container {
+  @apply h-full w-full flex justify-between;
+
+  .auth-logo {
+    @apply w-1/2 h-[100vh];
+  }
+}
+
+@import 'MediaAuth.module';

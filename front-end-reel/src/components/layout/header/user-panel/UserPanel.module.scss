@@ -1,0 +1,27 @@
+.user-panel {
+  @apply w-1/6 h-full flex items-center justify-start gap-x-4;
+
+  > a {
+    .fill {
+      @apply text-white bg-primary h-10 w-10;
+
+      &:hover {
+        @apply bg-primary;
+      }
+    }
+
+    > svg {
+      @apply h-10 w-10 p-2 rounded-full;
+
+      &:hover {
+        @apply bg-gray-700;
+      }
+    }
+
+    > img {
+      @apply rounded-full w-16 h-16;
+    }
+  }
+}
+
+@import 'MediaUserPanel.module.scss';

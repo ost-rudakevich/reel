@@ -1,0 +1,13 @@
+.admin-layout {
+  @apply h-full bg-main-gray;
+
+  .outlet {
+    @apply w-full flex px-0.5 justify-between;
+    height: calc(100% - (100% / 6) - 1px);
+
+    .outlet-wrapper {
+      @apply px-10 py-7 overflow-y-auto;
+      width: calc(100% - (100% / 5));
+    }
+  }
+}

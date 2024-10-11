@@ -1,0 +1,21 @@
+.general {
+  @apply rounded-lg font-medium shadow-md px-4 py-2;
+
+  > svg {
+    @apply h-6 w-6 p-1;
+  }
+}
+
+.primary-variant {
+  @apply bg-primary text-white;
+}
+
+.white-variant {
+  @apply bg-white text-black;
+}
+
+.gray-variant {
+  @apply bg-gray-600 text-white;
+}
+
+@import 'MediaButton.module.scss';

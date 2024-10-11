@@ -1,0 +1,20 @@
+.form {
+  @apply h-auto mt-7 pb-10;
+
+  .fields {
+    @apply flex gap-y-5 items-center justify-between flex-wrap pr-5;
+
+    > div {
+      @apply flex justify-start items-start;
+      width: 40%;
+    }
+
+    .wrapper {
+      @apply w-full flex justify-between flex-wrap gap-y-10 items-center gap-x-5;
+    }
+  }
+
+  > button {
+    @apply mt-10;
+  }
+}

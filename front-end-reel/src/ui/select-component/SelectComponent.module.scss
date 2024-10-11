@@ -1,0 +1,11 @@
+.select_container {
+  @apply flex flex-col h-20;
+
+  > div {
+    @apply w-full;
+  }
+
+  .error {
+    @apply text-primary font-medium text-sm mt-2 pl-1;
+  }
+}

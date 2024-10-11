@@ -1,0 +1,31 @@
+.admin-list {
+  @apply h-auto overflow-y-auto flex flex-col justify-start pr-2;
+
+  .item_header {
+    @apply w-full bg-primary flex items-center justify-between 
+    mt-2 px-5 py-2 rounded-md transition-colors;
+
+    > span {
+      @apply w-44 flex justify-start items-center overflow-x-auto pb-1;
+
+      &:last-child {
+        @apply justify-end;
+      }
+    }
+  }
+
+  .not_found {
+    @apply mt-2 text-white text-center py-3;
+  }
+}
+
+::-webkit-scrollbar {
+  height: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-500 rounded-full;
+  cursor: pointer;
+}
+
+@import 'MediaAdminList.module.scss';

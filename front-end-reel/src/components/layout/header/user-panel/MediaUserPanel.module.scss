@@ -1,0 +1,70 @@
+@media (max-width: 480px) {
+  .user-panel {
+    @apply gap-x-1 w-auto;
+    > a {
+      > svg {
+        @apply hidden;
+      }
+
+      > img {
+        @apply w-10 h-10;
+      }
+    }
+  }
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+  .user-panel {
+    @apply w-[18%] gap-x-1;
+    > a {
+      .fill {
+        @apply h-6 w-6;
+      }
+
+      > svg {
+        @apply h-6 w-6 p-1;
+      }
+
+      > img {
+        @apply max-w-10 min-w-10 h-10;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .user-panel {
+    @apply gap-x-2;
+    > a {
+      .fill {
+        @apply h-8 w-8;
+      }
+
+      > svg {
+        @apply h-8 w-8 p-1;
+      }
+
+      > img {
+        @apply w-12 h-12;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .user-panel {
+    @apply gap-x-3;
+    > a {
+      > svg {
+        @apply h-10 w-10 p-2;
+      }
+
+      > img {
+        @apply w-14 h-14;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+}

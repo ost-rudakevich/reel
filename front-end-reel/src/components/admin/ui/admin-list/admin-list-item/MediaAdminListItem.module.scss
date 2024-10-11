@@ -1,0 +1,75 @@
+@media (max-width: 480px) {
+  .item {
+    @apply mt-4 px-2 py-2;
+
+    > span {
+      width: calc(100% - 6rem);
+    }
+
+    > span:not(:first-of-type) {
+      @apply hidden;
+    }
+
+    .child {
+      @apply w-16;
+      > div {
+        a:first-child {
+          @apply hidden;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+  .item {
+    @apply mt-4 px-5 py-2;
+
+    > span {
+      width: calc(100% - 9rem);
+    }
+
+    > span:not(:first-of-type) {
+      @apply hidden;
+    }
+
+    .child {
+      @apply w-32;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .item {
+    @apply mt-4 px-5 py-2;
+
+    > span {
+      @apply w-28;
+    }
+
+    > span:not(:first-of-type) {
+      @apply hidden;
+    }
+
+    .child {
+      @apply w-24;
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .item {
+    @apply mt-4 px-5 py-2;
+
+    > span {
+      @apply w-16;
+    }
+
+    .child {
+      @apply w-44;
+    }
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+}

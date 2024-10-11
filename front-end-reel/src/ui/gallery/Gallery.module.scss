@@ -1,0 +1,55 @@
+@import 'src/assets/variables.scss';
+
+.gallery-wrapper {
+  @apply flex flex-col py-3 gap-y-5;
+
+  .title {
+    @apply text-3xl;
+  }
+
+  .gallery {
+    @apply py-3 flex flex-wrap gap-y-14 gap-x-5;
+  }
+}
+
+.item {
+  @apply relative shadow-lg p-1;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  &.vertical {
+    @apply h-72 w-[210px];
+  }
+
+  &.horizontal {
+    @apply mb-8 h-52 w-[350px];
+  }
+
+  &.with_text {
+    @include fade-bg-gradient(0deg);
+  }
+
+  img {
+    @apply w-full h-full rounded-lg;
+  }
+
+  .content {
+    @apply w-full px-3 relative bottom-9 z-20 text-center;
+
+    .title {
+      @apply w-full text-lg text-nowrap overflow-hidden mb-1 text-white;
+    }
+
+    .sub_title {
+      @apply w-full text-gray-500 text-nowrap overflow-hidden;
+    }
+
+    &.bottom {
+      @apply bottom-16;
+    }
+  }
+}
+
+@import 'MediaGallery.module';

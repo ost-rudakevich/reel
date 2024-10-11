@@ -1,0 +1,18 @@
+.item {
+  @apply w-full flex items-center justify-between bg-gray-300 
+  mt-4 px-5 py-2 rounded-md transition-colors;
+
+  > span {
+    @apply w-44 flex justify-start items-center overflow-x-auto text-nowrap pb-1;
+  }
+
+  .child {
+    @apply w-48 flex justify-end;
+  }
+
+  &:hover {
+    @apply bg-gray-700;
+  }
+}
+
+@import 'MediaAdminListItem.module.scss';

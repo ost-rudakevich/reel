@@ -1,0 +1,20 @@
+.edit {
+  @apply h-full flex flex-col gap-y-10;
+
+  .title {
+    @apply text-2xl;
+  }
+
+  .wrapper {
+    @apply flex flex-col justify-end gap-y-2;
+
+    > a {
+      @apply bg-primary px-3 py-0.5 rounded-xl text-xs;
+      width: 48%;
+    }
+
+    > div {
+      @apply w-full;
+    }
+  }
+}

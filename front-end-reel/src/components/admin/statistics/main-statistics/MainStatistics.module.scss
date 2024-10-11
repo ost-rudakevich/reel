@@ -1,0 +1,13 @@
+.main-statistics {
+  @apply h-full flex flex-col gap-y-4;
+
+  .header {
+    @apply text-xl;
+  }
+
+  .wrapper {
+    @apply flex flex-wrap gap-x-6 gap-y-4;
+  }
+}
+
+@import 'MediaMainStatistics.module.scss';

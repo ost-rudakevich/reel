@@ -1,0 +1,9 @@
+.logo {
+  @apply items-center gap-x-2 flex;
+
+  .name {
+    @apply font-semibold text-4xl text-white;
+  }
+}
+
+@import 'MediaLogo.module.scss';

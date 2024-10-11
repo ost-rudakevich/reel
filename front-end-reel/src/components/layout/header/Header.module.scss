@@ -1,0 +1,6 @@
+.header {
+  @apply h-1/6 w-full flex justify-between items-center border-b-2 border-gray-700
+  pl-20 pr-14;
+}
+
+@import 'MediaHeader.module.scss';

@@ -1,0 +1,35 @@
+@media (max-width: 480px) {
+  .details {
+    .wrapper {
+      > h1 {
+        @apply text-xl;
+      }
+    }
+  }
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+  .details {
+    .wrapper {
+      > h1 {
+        @apply text-2xl;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .details {
+    .wrapper {
+      > h1 {
+        @apply text-3xl;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+}

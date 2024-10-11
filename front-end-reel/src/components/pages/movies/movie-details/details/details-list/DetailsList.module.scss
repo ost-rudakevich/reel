@@ -1,0 +1,15 @@
+.list {
+  @apply flex items-center mb-1;
+
+  > .name {
+    @apply mr-2 text-white text-opacity-60;
+  }
+
+  > .links {
+    @apply flex gap-x-2 text-white text-opacity-90;
+
+    > .link {
+      @apply text-white hover:text-primary duration-200;
+    }
+  }
+}

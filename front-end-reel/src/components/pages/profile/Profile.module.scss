@@ -1,0 +1,35 @@
+.profile {
+  @apply h-full w-full flex flex-col items-start;
+
+  .title {
+    @apply flex w-full pl-12 pr-24 py-5 justify-between;
+
+    .logout {
+      @apply h-full pt-4;
+    }
+
+    .user {
+      @apply flex gap-x-10;
+
+      .wrapper {
+        @apply flex flex-col pt-5 gap-y-5;
+
+        .name {
+          @apply text-4xl font-bold;
+        }
+
+        .greet {
+          > span {
+            @apply text-primary text-xl;
+          }
+        }
+      }
+    }
+  }
+
+  .info {
+    @apply w-[80%] px-12 mt-8;
+  }
+}
+
+@import 'MediaProfile.module.scss';

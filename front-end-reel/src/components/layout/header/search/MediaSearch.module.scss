@@ -1,0 +1,31 @@
+@media (max-width: 480px) {
+  .search-wrapper {
+    @apply w-[40%];
+  }
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+  .search-wrapper {
+    @apply w-[50%];
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .search-wrapper {
+    .search {
+      > input {
+        @apply pl-4 pr-12 h-8;
+      }
+
+      svg {
+        @apply w-6 h-6 p-1;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+}

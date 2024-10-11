@@ -1,0 +1,5 @@
+.movie-details {
+  @apply flex flex-col gap-y-5;
+}
+
+@import 'MediaMovieDetails.module.scss';

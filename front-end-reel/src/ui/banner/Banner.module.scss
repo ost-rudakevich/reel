@@ -1,0 +1,11 @@
+@import 'src/assets/variables.scss';
+
+.banner {
+  @apply relative overflow-hidden w-full h-[340px] flex flex-col justify-end z-10;
+
+  @include fade-bg-gradient();
+
+  > img {
+    @apply h-full w-full;
+  }
+}

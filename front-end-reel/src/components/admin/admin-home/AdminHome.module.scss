@@ -1,0 +1,24 @@
+.admin-home {
+  @apply flex flex-col gap-y-12;
+
+  .title {
+    @apply text-3xl font-bold;
+  }
+
+  .info {
+    @apply flex flex-col gap-y-4;
+
+    > h2 {
+      @apply text-xl font-bold;
+    }
+
+    > ul {
+      @apply ml-2;
+      list-style-type: disc;
+
+      > li {
+        @apply mb-5;
+      }
+    }
+  }
+}

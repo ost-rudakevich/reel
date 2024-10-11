@@ -1,0 +1,73 @@
+@media (max-width: 480px) {
+  .field {
+    .container {
+      @apply gap-x-2 px-1 py-1;
+
+      .input {
+        @apply px-2 text-lg;
+      }
+
+      .icon-container {
+        @apply p-1;
+
+        .icon {
+          @apply w-5 h-5;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+  .field {
+    .container {
+      @apply gap-x-2 px-1 py-1;
+
+      .input {
+        @apply px-2 text-lg;
+      }
+
+      .icon-container {
+        @apply p-2;
+
+        .icon {
+          @apply w-4 h-4;
+        }
+      }
+    }
+  }
+
+  .error {
+    @apply px-2 ml-2 mt-1;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .field {
+    .container {
+      @apply gap-x-3 px-2 py-1;
+
+      .input {
+        @apply px-2 text-lg;
+      }
+
+      .icon-container {
+        @apply p-2;
+
+        .icon {
+          @apply w-5 h-5;
+        }
+      }
+    }
+  }
+
+  .error {
+    @apply px-2 ml-2 mt-1;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+}

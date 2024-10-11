@@ -1,0 +1,39 @@
+.sidebar {
+  @apply h-full w-1/5 pl-12 pr-5 pt-9 pb-6 gap-x-4 flex flex-col items-center gap-y-5 
+  border-r-2 border-gray-700 overflow-y-auto;
+
+  .menu {
+    @apply flex flex-col w-full;
+
+    .title {
+      @apply text-gray-500 uppercase text-base font-semibold;
+    }
+
+    .panel {
+      @apply flex flex-col space-y-1.5 py-3;
+
+      > .item {
+        @apply flex w-full items-center gap-x-3 px-3 py-2 rounded-lg text-base 
+        transition-all duration-300;
+
+        > .icon {
+          @apply text-xl;
+        }
+
+        &:hover {
+          @apply bg-gray-700;
+        }
+      }
+
+      > .active {
+        @apply bg-primary;
+
+        &:hover {
+          @apply bg-primary;
+        }
+      }
+    }
+  }
+}
+
+@import 'MediaSidebar.module.scss';

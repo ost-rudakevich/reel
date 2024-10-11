@@ -1,0 +1,15 @@
+.tooltip {
+  @apply p-3 bg-gray-900 flex flex-col rounded-lg;
+
+  > .title {
+    @apply text-center;
+  }
+
+  > .value {
+    @apply text-sm mt-2;
+
+    > span {
+      @apply ml-2;
+    }
+  }
+}

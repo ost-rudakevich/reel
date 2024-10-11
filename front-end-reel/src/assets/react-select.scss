@@ -1,0 +1,116 @@
+/* React Select */
+.custom-select {
+  &__control {
+    background-color: white !important;
+    border: none !important;
+    border-radius: 0.5rem !important;
+    border-bottom: 1px solid black !important;
+    box-shadow: none !important;
+    padding-left: 15px;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    magring-bottom: 25px;
+
+    &--menu-is-open {
+      border-color: black !important;
+    }
+  }
+
+  &__value-container {
+    padding: 0 !important;
+    cursor: text !important;
+  }
+
+  &__single-value {
+    color: black !important;
+    font-size: 15px !important;
+  }
+
+  &__input-container {
+    color: black !important;
+  }
+
+  &__indicator-separator {
+    display: none !important;
+  }
+
+  &__indicators {
+    cursor: pointer !important;
+  }
+
+  &__indicator {
+    color: black !important;
+
+    &:hover {
+      color: #66676e !important;
+    }
+  }
+
+  &__multi-value {
+    background-color: #b61c1c !important;
+    border-radius: 1rem !important;
+  }
+
+  &__multi-value__label {
+    font-size: 80% !important;
+    color: white !important;
+  }
+
+  &__multi-value__remove {
+    color: white !important;
+
+    &:hover {
+      background-color: transparent !important;
+      color: #000 !important;
+    }
+  }
+
+  &__menu {
+    background-color: white !important;
+    color: black !important;
+    border-radius: 10px !important;
+    padding: 2px 0;
+    overflow-x: auto;
+  }
+
+  &__option {
+    cursor: pointer !important;
+    color: black !important;
+
+    &--is-selected {
+      background-color: #b61c1c !important;
+      color: white !important;
+    }
+
+    &--is-focused {
+      background-color: #b61c1c !important;
+      color: white !important;
+    }
+  }
+
+  &-container {
+    > div {
+      outline: none !important;
+      box-shadow: none !important;
+    }
+
+    .form-control__control {
+      @apply outline-none border-none transition-all;
+      border-color: black !important;
+      box-shadow: none !important;
+    }
+
+    &:hover,
+    &--menu-is-open {
+      border-color: black !important;
+    }
+
+    .form-control__indicators {
+      @apply cursor-pointer;
+    }
+  }
+
+  &__menu {
+    @apply animate-scaleIn;
+  }
+}

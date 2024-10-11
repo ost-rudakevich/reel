@@ -1,0 +1,19 @@
+.layout {
+  @apply h-full bg-main-gray;
+
+  .outlet {
+    @apply w-full flex justify-between px-0.5;
+    height: calc(100% - (100% / 6) - 1px);
+
+    .outlet-wrapper {
+      @apply overflow-y-auto px-10 py-7;
+      width: calc(100% - (100% / 5));
+
+      &.no-padding {
+        @apply px-0 py-0;
+      }
+    }
+  }
+}
+
+@import 'MediaLayout.module';

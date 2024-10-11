@@ -1,0 +1,45 @@
+.wrapper-error {
+  @apply w-full h-full;
+
+  .error {
+    @apply flex flex-col justify-start items-center pt-24
+    gap-y-10;
+
+    .logo {
+      @apply flex items-center gap-x-3;
+
+      > span {
+        @apply text-9xl text-white;
+      }
+
+      > img {
+        @apply h-32 w-32;
+      }
+    }
+
+    .title {
+      @apply text-6xl font-semibold tracking-normal pl-4;
+    }
+
+    .message {
+      @apply text-xl font-medium tracking-widest pl-10;
+    }
+
+    .button-wrapper {
+      @apply flex gap-x-10;
+
+      > button {
+        @apply flex justify-center items-center px-10 py-3
+        rounded-3xl gap-x-4 bg-primary text-white;
+
+        > span {
+          @apply tracking-normal;
+        }
+
+        > svg {
+          @apply h-5 w-5;
+        }
+      }
+    }
+  }
+}

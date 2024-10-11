@@ -1,0 +1,72 @@
+.search-list {
+  @apply w-full flex max-h-[350px] py-1 overflow-y-auto flex-col gap-y-2 absolute h-auto 
+  border border-gray-700 rounded-lg bg-gray-800 animate-fade z-40;
+  top: calc(100% + 10px);
+
+  &.loading {
+    @apply pb-14 pt-12;
+  }
+
+  .title {
+    @apply w-full flex justify-between items-center px-2 pt-1;
+
+    > span {
+      @apply text-lg font-medium pl-2;
+    }
+
+    > button:hover {
+      @apply bg-primary;
+    }
+
+    &.error {
+      @apply flex justify-end;
+    }
+  }
+
+  .search-result {
+    @apply max-h-[350px] overflow-y-auto pr-2;
+
+    > .item {
+      @apply h-36 flex gap-x-7 items-center py-3 px-4 relative;
+
+      .info {
+        @apply h-full flex flex-col gap-y-1 justify-start;
+
+        .name {
+          @apply text-lg;
+        }
+
+        .genres {
+          @apply flex flex-wrap gap-x-2;
+
+          > span {
+            @apply text-sm text-gray-400;
+          }
+        }
+
+        .year {
+          @apply text-sm text-gray-400;
+        }
+      }
+
+      > img {
+        @apply h-full w-24 rounded-md;
+      }
+
+      &:hover {
+        @apply bg-gray-700;
+      }
+    }
+  }
+
+  .not-found {
+    @apply w-full flex justify-center items-center text-primary pb-8
+    text-lg font-semibold;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+@import 'MediaSearchList.module.scss';

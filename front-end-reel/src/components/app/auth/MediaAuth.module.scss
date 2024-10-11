@@ -1,0 +1,15 @@
+@media (max-width: 1279px) {
+  .auth-container {
+    @apply justify-center items-center;
+
+    .auth-logo {
+      @apply hidden;
+    }
+  }
+}
+
+@media (min-width: 820px) and (max-width: 1279px) {
+}
+
+@media (min-width: 1900px) {
+}

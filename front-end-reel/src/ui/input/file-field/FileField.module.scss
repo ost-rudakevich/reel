@@ -1,0 +1,42 @@
+.file-field {
+  @apply relative;
+
+  .wrapper {
+    @apply w-full flex flex-col gap-y-5;
+
+    > label {
+      .error {
+        @apply relative -bottom-3;
+      }
+
+      > span {
+        @apply text-xs uppercase block mb-4;
+      }
+
+      > input {
+        @apply block w-full text-sm file:mr-4 file:py-2 file:px-4 
+        file:rounded-full file:border-0 file:text-sm
+         file:bg-primary file:text-white transition-opacity;
+      }
+      &:hover {
+        @apply cursor-pointer;
+      }
+    }
+
+    > .uploaded_image_container {
+      @apply w-full h-64;
+
+      > img {
+        @apply w-full h-full rounded-md;
+      }
+    }
+
+    .video {
+      @apply bg-primary;
+    }
+
+    .error {
+      @apply text-red-500 font-medium text-sm mb-2;
+    }
+  }
+}

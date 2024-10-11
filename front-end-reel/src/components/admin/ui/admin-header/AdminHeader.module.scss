@@ -1,0 +1,9 @@
+.admin-header {
+  @apply w-full flex justify-between items-center h-11 mb-7 pr-5;
+
+  .field {
+    @apply w-1/4;
+  }
+}
+
+@import 'MediaAdminHeader.module.scss';

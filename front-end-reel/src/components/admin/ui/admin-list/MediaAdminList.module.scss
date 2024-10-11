@@ -1,0 +1,53 @@
+@media (max-width: 480px) {
+  .admin-list {
+    @apply pr-1;
+
+    .item_header {
+      > span {
+        @apply w-44 text-xs;
+      }
+
+      > span:not(:first-of-type):not(:last-of-type) {
+        @apply hidden;
+      }
+    }
+  }
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+  .admin-list {
+    @apply pr-1 gap-x-6;
+
+    .item_header {
+      > span {
+        @apply w-44 text-sm;
+      }
+
+      > span:not(:first-of-type):not(:last-of-type) {
+        @apply hidden;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .admin-list {
+    @apply pr-2;
+
+    .item_header {
+      > span {
+        @apply w-40 text-sm;
+      }
+
+      > span:not(:first-of-type):not(:last-of-type) {
+        @apply hidden;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+}

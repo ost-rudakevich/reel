@@ -1,0 +1,15 @@
+.btn {
+  @apply py-4;
+
+  .passive {
+    @apply text-gray-200;
+
+    &:hover {
+      @apply text-primary;
+    }
+  }
+
+  .active {
+    @apply text-primary;
+  }
+}
